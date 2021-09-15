@@ -28,7 +28,7 @@ img#logo-img{
 
 
 div#container{
-    height: 900px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,7 +42,7 @@ div#logo{
 
 div#title-and-content{
     width: 500px;
-    height: 900px;
+    /* height: 900px; */
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -51,7 +51,7 @@ div#title-and-content{
 
 div#title{
     width: 500px;
-    height: 50px;
+    /* height: 50px; */
     text-align: center;
     padding-top: 17px;
     
@@ -59,7 +59,7 @@ div#title{
 
 div#main-content{
     width: 500px;
-    height: 170px;
+    /* height: 170px; */
     margin-left: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
@@ -67,15 +67,21 @@ div#main-content{
 }
 
 div#media{
-    height: 600px;
+    height: auto;
     padding-left: 100px;
 }
 
 div#nav{
     width: 250px;
-    height: 250px;
+    /* height: 250px; */
     margin-left: 20px;
     padding-left: 10px;
+}
+
+div#footer{
+    height: 20px;
+    margin-top: 500px;
+    background-image: url(images/blueflames.jpg);
 }
 
 @media screen and (max-width: 768px) {
