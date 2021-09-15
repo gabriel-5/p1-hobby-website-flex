@@ -78,6 +78,7 @@ div#nav{
 
 img#logo-img{
     border-radius: 3%;
+    position: fixed;
 }
 
 /* #heading{
