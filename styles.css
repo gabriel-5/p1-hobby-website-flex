@@ -1,5 +1,6 @@
 /* GENERAL STYLING */
 
+
 body{
     background-color: black;
     color: blueviolet;
@@ -11,7 +12,6 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
     position: fixed;
 }
 
@@ -24,12 +24,38 @@ a{
 
 /* BASIC LAYOUT */
 
+img#logo-img{
+    border-radius: 3%;
+    position: fixed;
+}
+
+
 div#container{
     height: 900px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    div#container{
+        flex-direction: column;
+    }
+    img#logo-img{
+        border-radius: 3%;
+        position: static;
+        justify-self: center;
+    }
+    #nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: static;
+    }
+    
+
+}
+
 
 div#logo{
     width: 250px;
@@ -76,10 +102,6 @@ div#nav{
 /* ELEMENT STYLING */
 
 
-img#logo-img{
-    border-radius: 3%;
-    position: fixed;
-}
 
 /* #heading{
     border: 2px ridge plum;
