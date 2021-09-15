@@ -1,4 +1,3 @@
-/* GENERAL STYLING */
 
 
 body{
@@ -22,8 +21,6 @@ a{
 }
 
 
-/* BASIC LAYOUT */
-
 img#logo-img{
     border-radius: 3%;
     position: fixed;
@@ -35,25 +32,6 @@ div#container{
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-    div#container{
-        flex-direction: column;
-    }
-    img#logo-img{
-        border-radius: 3%;
-        position: static;
-        justify-self: center;
-    }
-    #nav-links {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        position: static;
-    }
-    
-
 }
 
 
@@ -98,13 +76,52 @@ div#nav{
     padding-left: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    div#container{
+        flex-direction:column;
+        justify-content: flex-start;
 
-/* ELEMENT STYLING */
+    }
 
+    div#logo{
+        width: 250px;
+        height: 250px;
+        justify-self: center;
+    }
 
+    div#title-and-content{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    
+    }
 
-/* #heading{
-    border: 2px ridge plum;
-    border-radius: 6%;
-    padding: 4px;
-} */
+    img#logo-img{
+        border-radius: 3%;
+        position: static;
+        width: 100px;
+        height: 100px;
+    }
+    
+
+    #nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: static;
+    }
+
+    div#nav{
+        width: 250px;
+        height: 250px;
+        margin-left: 20px;
+        padding-left: 10px;
+        
+    }
+    
+
+    
+}
