@@ -81,33 +81,10 @@ div#nav{
 @media screen and (max-width: 768px) {
     div#container{
         flex-direction:column-reverse;
-        justify-content: flex-start;
+        padding-top: 100px;
+        align-items: flex-start;
 
     }
-
-    div#logo{
-        width: 250px;
-        height: 250px;
-        justify-self: center;
-    }
-
-    div#title-and-content{
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        
-    
-    }
-
-    img#logo-img{
-        border-radius: 3%;
-        position: static;
-        width: 0x;
-        height: 0px;
-    }
-    
 
     #nav-links {
         list-style-type: none;
@@ -123,6 +100,8 @@ div#nav{
         padding-left: 10px;
         
     }
+
+   
     
 
     
