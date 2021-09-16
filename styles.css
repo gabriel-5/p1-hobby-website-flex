@@ -68,10 +68,30 @@ a{
 
 img#logo-img{
     padding-top: 10px;
-    border-radius: 310%;
+    border-radius: 50%;
     position: fixed;
     width: 250px;
     height: 250px;
+}
+
+img#logo-img2{
+    padding-top: 260px;
+    padding-left: 25px;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    filter: brightness(150%);
+    filter: opacity(60%);
+}
+
+img#logo-img3{
+    padding-top: 460px;
+    padding-left: 50px;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    filter: brightness(220%);
+    filter: opacity(40%);
 }
 
 img{
@@ -86,11 +106,12 @@ img{
 /* STYLE DIVS */
 
 div#container{
-    /* height: 1000px; */
+    height: auto;
     width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
     /* border: 10px ridge crimson; */
 }
 
