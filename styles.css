@@ -8,6 +8,17 @@ body{
 
 }
 
+#plane{
+    width: 100%;
+    transform: skew(50deg, -30deg);
+}
+
+#bird{
+    width: 30%;
+    transform: scaleX(-1);
+    transform: translate(-120px, -100%);
+}
+
 
 #nav-links {
     list-style-type: none;
