@@ -1,17 +1,26 @@
 
-
+/* mouse stuff */
 
 ::selection {
     color: none;
     background: none;
 }
 
-
 ::-moz-selection {
     color: none;
     background: none;
 }
 
+audio{
+    pointer-events: all;
+    border-radius:100%;
+    width: 48px;
+    height: 1em;
+}
+
+img{
+    pointer-events: none;
+}
 
 body{
     background-color: black;
@@ -21,8 +30,26 @@ body{
 
 }
 
-audio{
-    pointer-events: all;
+/* image styling */
+
+img#worm{
+    padding-top: 16px;
+    width: 613px;
+    height: 20px;
+}
+
+img#worm2{
+    padding-top: 16px;
+    width: 285px;
+    height: 20px;
+    transform: scalex(-1);
+}
+
+img#worm-contact{
+    padding-top: 16px;
+    width: 300px;
+    height: 20px;
+    transform: scale3d(1, 5, 1);
 }
 
 #plane{
@@ -37,47 +64,18 @@ audio{
 }
 
 
-#nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-}
-
-
-img#worm{
-    padding-top: 16px;
-    width: 300px;
-    height: 20px;
-}
-
-img#worm-contact{
-    padding-top: 16px;
-    width: 300px;
-    height: 20px;
-    transform: scale3d(1, 5, 1);
-}
-
-a{
-    color:crimson;
-    text-decoration: none;
-    pointer-events: visible;
-    
-}
-
-
 img#logo-img{
     margin-top: 7px ;
     margin-left: 7px;
-    border: 3px dotted crimson;
-    /* padding-top: 10px; */
+    border: 3px blueviolet;
+    border-style: dashed;
     border-radius: 50%;
     position: fixed;
     width: 250px;
     height: 250px;
 }
 
-img#logo-img2{
+/* img#logo-img2{
     padding-top: 260px;
     padding-left: 25px;
     position: fixed;
@@ -95,18 +93,30 @@ img#logo-img3{
     height: 150px;
     filter: brightness(220%);
     filter: opacity(40%);
-}
-
-img{
-    pointer-events: none;
-}
-
-/* .arrangement-info{
-    padding-top: 100px;
 } */
 
 
-/* STYLE DIVS */
+
+/* nav link styling */
+
+#nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+/* link styling */
+
+a{
+    color:crimson;
+    text-decoration: none;
+    pointer-events: visible;
+    
+}
+
+
+/* structure */
 
 div#container{
     height: auto;
@@ -114,10 +124,7 @@ div#container{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-    /* border: 10px ridge crimson; */
 }
-
 
 div#logo{
     width: 250px;
@@ -125,7 +132,8 @@ div#logo{
 }
 
 div#title-and-content{
-    width: 500px;
+    width: 700px;
+    margin-left: 180px;
     display: flex;
     flex-wrap: wrap;
 
@@ -150,8 +158,9 @@ div#main-content{
 }
 
 div#media{
-    padding-left: 100px;
+    padding-left: 60px;
     padding-top: 60px;
+    width: 600px;
 }
 
 div#nav{
