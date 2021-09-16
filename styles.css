@@ -1,11 +1,28 @@
 
 
 
+::selection {
+    color: none;
+    background: none;
+}
+
+
+::-moz-selection {
+    color: none;
+    background: none;
+}
+
+
 body{
     background-color: black;
     color: blueviolet;
      font-family: 'MedievalSharp', cursive;
+     pointer-events: none;
 
+}
+
+audio{
+    pointer-events: all;
 }
 
 #plane{
@@ -44,26 +61,37 @@ img#worm-contact{
 a{
     color:crimson;
     text-decoration: none;
+    pointer-events: visible;
     
 }
 
 
 img#logo-img{
-    border-radius: 3%;
+    padding-top: 10px;
+    border-radius: 310%;
     position: fixed;
     width: 250px;
     height: 250px;
 }
 
+img{
+    pointer-events: none;
+}
+
+/* .arrangement-info{
+    padding-top: 100px;
+} */
+
 
 /* STYLE DIVS */
 
 div#container{
-    height: auto;
+    /* height: 1000px; */
     width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* border: 10px ridge crimson; */
 }
 
 
