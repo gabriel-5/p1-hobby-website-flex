@@ -173,6 +173,7 @@ div#nav{
         flex-direction:column-reverse;
         padding-top: 100px;
         align-items: flex-start;
+        width: auto;
 
     }
 
@@ -194,6 +195,12 @@ div#nav{
     img{
         height: 0px;
         width: 0px;
+    }
+
+    div#media{
+        padding-left: 0px;
+        padding-top: 0px;
+        width: auto;
     }
 
    
